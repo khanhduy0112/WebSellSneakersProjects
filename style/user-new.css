@@ -33,3 +33,6 @@ button {
 .color_white {
   color: white;
 }
+select {
+  border: 1px solid #ced4da;
+}

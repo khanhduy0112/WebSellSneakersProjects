@@ -1,7 +1,21 @@
+select {
+  width: 150px;
+  height: 40px;
+  border-radius: 0.2rem;
+  background-color: blueviolet;
+  color: white;
+  margin: 0.5rem 0rem;
+}
+
 .right_content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+.right_content h2 {
+  margin: 2rem 0rem;
+}
+body {
 }
 textarea {
   max-width: 300px;
@@ -75,7 +89,17 @@ label {
   cursor: pointer;
   display: none;
 }
-@media screen and (max-width: 1500px) {
+.col-2 .menu {
+  background-color: #2a9d8f;
+}
+.col-2 .menu a {
+  color: white;
+}
+.col-2 .menu_heading {
+  background-color: #343a40;
+  color: white;
+}
+@media screen and (max-width: 1000px) {
   .col-10 > div {
     display: flex;
     flex-direction: column;
@@ -89,7 +113,7 @@ label {
     margin: 0 1rem;
   }
   .col-2 {
-    margin: 0;
+    margin: auto;
   }
 
   .col-2 .menu_heading {
@@ -120,4 +144,14 @@ label {
 }
 .hidden {
   display: none;
+}
+.col-7 {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.col-10 {
+}
+button {
+  color: white !important;
 }
