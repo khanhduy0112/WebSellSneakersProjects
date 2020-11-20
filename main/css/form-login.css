@@ -67,12 +67,6 @@ input[type="password"] {
   padding: 16px;
 }
 
-/* The "Forgot password" text */
-.login-container span.psw {
-  /* float: right; */
-  /* padding-top: 16px; */
-}
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   .login-container span.psw {
