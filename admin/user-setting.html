@@ -97,7 +97,7 @@
             <div class="menu">
               <a id="a-profile" href="">Hồ Sơ</a>
               <a href="" id="a-account-security">Bảo Mật</a>
-              <a href="" id="a-account-address">Địa Chỉ</a>
+              <!-- <a href="" id="a-account-address">Địa Chỉ</a> -->
               <a href="" id="a-account">Tài Khoản</a>
             </div>
           </nav>
@@ -115,8 +115,12 @@
                   <input type="email" class="email" id="email" />
                 </div>
                 <div>
-                  <label for="bio">Tiểu Sử</label><br />
-                  <textarea name="bio" id="bio" cols="50" rows="5"></textarea>
+                  <label for="phone">Số điện thoại</label>
+                  <input type="text" name="phone" id="" />
+                </div>
+                <div>
+                  <label for="address">Địa chỉ</label>
+                  <input type="text" name="address" id="" />
                 </div>
                 <div>
                   <select name="role" id="role">
@@ -125,15 +129,6 @@
                     <option value="manage">Quản lí</option>
                     <option value="stasff">Nhân viên</option>
                   </select>
-                </div>
-                <div>
-                  <label for="url"
-                    >URL
-                    <small
-                      >(Dùng để truy cập đến trang mạng xã hội cá nhân)</small
-                    > </label
-                  ><br />
-                  <input type="text" class="url" id="url" />
                 </div>
                 <div>
                   <button>Cập Nhật</button>
@@ -192,12 +187,15 @@
               <div class="col-3"></div>
             </div>
 
-            <div id="address" class="setting_content address">
+            <!-- <div id="address" class="setting_content address">
               <div class="col-7">
                 <h2 style="color: #343a40; margin-top: 1rem">
                   Thay đổi địa chỉ
                 </h2>
                 <hr style="margin: 1rem 0" />
+                <div>
+
+                </div>
                 <div>
                   <label for="city">Thành phố</label>
                   <input type="text" name="city" id="city" />
@@ -221,7 +219,7 @@
                 </button>
               </div>
               <div class="col-3"></div>
-            </div>
+            </div> -->
             <div id="security" class="setting_content security">
               <div class="col-7">
                 <h2 style="color: #343a40; margin-top: 1rem">
@@ -264,40 +262,40 @@
     const aProfile = document.getElementById("a-profile");
     const aAccount = document.getElementById("a-account");
     const aSecurity = document.getElementById("a-account-security");
-    const aAddress = document.getElementById("a-account-address");
+    // const aAddress = document.getElementById("a-account-address");
     const profile = document.getElementById("profile");
     const account = document.getElementById("account");
     const security = document.getElementById("security");
-    const address = document.getElementById("address");
+    // const address = document.getElementById("address");
 
     aAccount.addEventListener("click", (e) => {
       e.preventDefault();
       profile.style.display = "none";
       security.style.display = "none";
       account.style.display = "block";
-      address.style.display = "none";
+      // address.style.display = "none";
     });
     aProfile.addEventListener("click", (e) => {
       e.preventDefault();
       account.style.display = "none";
       security.style.display = "none";
       profile.style.display = "flex";
-      address.style.display = "none";
+      // address.style.display = "none";
     });
     aSecurity.addEventListener("click", (e) => {
       e.preventDefault();
       profile.style.display = "none";
       account.style.display = "none";
-      address.style.display = "none";
+      // address.style.display = "none";
       security.style.display = "block";
     });
-    aAddress.addEventListener("click", (e) => {
-      e.preventDefault();
-      profile.style.display = "none";
-      account.style.display = "none";
-      security.style.display = "none";
-      address.style.display = "block";
-    });
+    // aAddress.addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   profile.style.display = "none";
+    //   account.style.display = "none";
+    //   security.style.display = "none";
+    //   address.style.display = "block";
+    // });
   </script>
   <script src="./js/main.js"></script>
 </html>
