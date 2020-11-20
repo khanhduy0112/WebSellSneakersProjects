@@ -13,10 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>
-      Bootie Ecommerce Bootstrap Responsive Web Template | Shop-Single ::
-      W3layouts
-    </title>
+    <title>Sản Phẩm Chi Tiết</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
@@ -98,9 +95,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   HÀNG</a
                 >
               </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-user-o" aria-hidden="true"></i>TÀI KHOẢN</a
+              <li class="a-login">
+                <a href=""
+                  ><i class="fa fa-user-o" aria-hidden="true"></i>ĐĂNG NHÂP</a
                 >
               </li>
             </ul>
@@ -249,7 +246,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <div class="details">
                 <h4 class="name_product">Nike Blazer Mid77</h4>
                 <div class="size_product">
-                  <p class="size_title">size :</p>
+                  <h2 class="size_title">Size :</h2>
                   <span class="size size_37"
                     ><h4 class="sizeh4 size37">37</h4>
                   </span>
@@ -263,33 +260,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     ><h4 class="sizeh4 size40">40</h4>
                   </span>
                 </div>
-                <div class="amountdiv">
-                  <p class="amount1">Số lượng:</p>
-                  <div class="amount">
-                    <input
-                      class="amount"
-                      type="number"
-                      name="amount"
-                      placeholder="1"
-                    />
+                <div
+                  class="product_amount"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div><strong style="font-weight: 500">Số Lượng</strong></div>
+                  <div>
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
                   </div>
                 </div>
                 <div class="total">
-                  <p class="total_title">Total : $575.00</p>
+                  <div class="total_title" style="margin: 1rem 0">
+                    <strong>Giá :</strong>
+                    <span style="color: green"> $575.00</span>
+                  </div>
                 </div>
                 <div class="button-product">
                   <button class="buttons buttons-cart" type="button">
-                    THÊM VÀO<i
-                      class="fa fa-shopping-cart"
-                      aria-hidden="true"
-                    ></i>
+                    Thêm vào giỏ
                   </button>
                   <a href="cart.html">
                     <button class="buttons buttons-carts" type="button">
-                      ĐI ĐẾN<i
-                        class="fa fa-shopping-cart"
-                        aria-hidden="true"
-                      ></i>
+                      Xem giỏ hàng
                     </button>
                   </a>
                 </div>
@@ -481,5 +475,65 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </footer>
     <!-- //footer -->
     <!-- //footer -->
+    <!-- form login -->
+    <div class="login-container hidden">
+      <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <h2 style="color: white">Đăng Nhập</h2>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Tên</b></label>
+          <input
+            type="text"
+            placeholder="Vui lòng nhập tên"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Mật Khẩu</b></label>
+          <input
+            type="password"
+            placeholder="Vui Lòng Nhập Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Đăng Nhập</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Lưu mật
+            khẩu
+          </label>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(255, 182, 47);
+            padding: 0 !important;
+            margin: 0 !important; ;
+          "
+          class="container"
+          style="background-color: #f1f1f1"
+        >
+          <button type="button" class="cancelbtn">Hủy</button>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+            <span class="psw">Chưa <a href="#">đăng kí?</a></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- form login -->
+    <script src="./script/main.js"></script>
   </body>
 </html>

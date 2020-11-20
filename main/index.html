@@ -5,7 +5,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>H2DSHOP</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <meta
@@ -25,6 +25,7 @@
       href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./css/form-login.css" /> -->
   </head>
 
   <body>
@@ -66,8 +67,8 @@
                   HÀNG</a
                 >
               </li>
-              <li>
-                <a href="login.html"
+              <li class="a-login">
+                <a href=""
                   ><i class="fa fa-user-o" aria-hidden="true"></i>ĐĂNG NHÂP</a
                 >
               </li>
@@ -536,5 +537,67 @@
       </footer>
     </div>
     <!-- //footer -->
+
+    <!-- form login -->
+    <div class="login-container hidden">
+      <form action="" method="post">
+        <div class="imgcontainer">
+          <h2 style="color: white">Đăng Nhập</h2>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Tên</b></label>
+          <input
+            type="text"
+            placeholder="Vui lòng nhập tên"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Mật Khẩu</b></label>
+          <input
+            type="password"
+            placeholder="Vui Lòng Nhập Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Đăng Nhập</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Lưu mật
+            khẩu
+          </label>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(255, 182, 47);
+            padding: 0 !important;
+            margin: 0 !important; ;
+          "
+          class="container"
+          style="background-color: #f1f1f1"
+        >
+          <button type="button" class="cancelbtn">Hủy</button>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+            <span class="psw">Chưa <a href="#">đăng kí?</a></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="wrapper"></div>
+    <!-- form login -->
   </body>
+  <script src="./script/main.js"></script>
 </html>
