@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./style/order.css" />
     <link rel="stylesheet" href="./js/zoom/css/zoom.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      td a {
+        color: #2b80ff;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
     <div class="body_container">
@@ -183,7 +189,9 @@
                 <tbody id="table">
                   <tr class="item">
                     <td><input type="checkbox" class="cb_item" /></td>
-                    <td class="td_order">#322 Nguyen Khanh Duy</td>
+                    <td class="td_order">
+                      <a href="./order-details.html">#322 Nguyen Khanh Duy</a>
+                    </td>
                     <td class="td_date">20/11/2020</td>
                     <td class="td_status"><span>Hoàn thành</span></td>
                     <td class="td_payment">COD</td>
@@ -192,7 +200,9 @@
                   </tr>
                   <tr class="item">
                     <td><input class="cb_item" type="checkbox" /></td>
-                    <td class="td_order">#322 Nguyen Khanh Duy</td>
+                    <td class="td_order">
+                      <a href="./order-details.html">#322 Nguyen Khanh Duy</a>
+                    </td>
                     <td class="td_date">20/11/2020</td>
                     <td class="td_status"><span>Hoàn thành</span></td>
                     <td class="td_payment">COD</td>
@@ -201,7 +211,9 @@
                   </tr>
                   <tr class="item">
                     <td><input class="cb_item" type="checkbox" /></td>
-                    <td class="td_order">#322 Nguyen Khanh Duy</td>
+                    <td class="td_order">
+                      <a href="./order-details.html">#322 Nguyen Khanh Duy</a>
+                    </td>
                     <td class="td_date">20/11/2020</td>
                     <td class="td_status"><span>Đang xử lí</span></td>
                     <td class="td_payment">COD</td>
@@ -245,7 +257,7 @@
   <script src="./js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
-  <script>
+  <!-- <script>
     $("#sellect_all").on("click", (e) => {
       const checkboxs = document.querySelectorAll(".cb_item");
       for (let i = 0; i < checkboxs.length; i++) {
@@ -260,5 +272,5 @@
         window.location.href = "http://127.0.0.1:5500/order-details.html";
       });
     }
-  </script>
+  </script> -->
 </html>
