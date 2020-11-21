@@ -97,7 +97,7 @@
             <div class="menu">
               <a id="a-profile" href="">Hồ Sơ</a>
               <a href="" id="a-account-security">Bảo Mật</a>
-              <!-- <a href="" id="a-account-address">Địa Chỉ</a> -->
+              <a href="" id="a-account-address">Địa Chỉ</a>
               <a href="" id="a-account">Tài Khoản</a>
             </div>
           </nav>
@@ -187,22 +187,19 @@
               <div class="col-3"></div>
             </div>
 
-            <!-- <div id="address" class="setting_content address">
+            <div id="address" class="setting_content address">
               <div class="col-7">
                 <h2 style="color: #343a40; margin-top: 1rem">
                   Thay đổi địa chỉ
                 </h2>
                 <hr style="margin: 1rem 0" />
                 <div>
-
+                  <label for="country">Quốc gia</label>
+                  <input type="text" name="coutry" id="country" />
                 </div>
                 <div>
-                  <label for="city">Thành phố</label>
-                  <input type="text" name="city" id="city" />
-                </div>
-                <div>
-                  <label for="tinh">Tỉnh</label>
-                  <input type="text" name="tinh" />
+                  <label for="address-details">Địa chỉ</label>
+                  <input type="text" />
                 </div>
                 <div>
                   <label for="postcode">Mã bưu điện</label>
@@ -219,7 +216,8 @@
                 </button>
               </div>
               <div class="col-3"></div>
-            </div> -->
+            </div>
+
             <div id="security" class="setting_content security">
               <div class="col-7">
                 <h2 style="color: #343a40; margin-top: 1rem">
@@ -262,40 +260,40 @@
     const aProfile = document.getElementById("a-profile");
     const aAccount = document.getElementById("a-account");
     const aSecurity = document.getElementById("a-account-security");
-    // const aAddress = document.getElementById("a-account-address");
+    const aAddress = document.getElementById("a-account-address");
     const profile = document.getElementById("profile");
     const account = document.getElementById("account");
     const security = document.getElementById("security");
-    // const address = document.getElementById("address");
+    const address = document.getElementById("address");
 
     aAccount.addEventListener("click", (e) => {
       e.preventDefault();
       profile.style.display = "none";
       security.style.display = "none";
       account.style.display = "block";
-      // address.style.display = "none";
+      address.style.display = "none";
     });
     aProfile.addEventListener("click", (e) => {
       e.preventDefault();
       account.style.display = "none";
       security.style.display = "none";
       profile.style.display = "flex";
-      // address.style.display = "none";
+      address.style.display = "none";
     });
     aSecurity.addEventListener("click", (e) => {
       e.preventDefault();
       profile.style.display = "none";
       account.style.display = "none";
-      // address.style.display = "none";
+      address.style.display = "none";
       security.style.display = "block";
     });
-    // aAddress.addEventListener("click", (e) => {
-    //   e.preventDefault();
-    //   profile.style.display = "none";
-    //   account.style.display = "none";
-    //   security.style.display = "none";
-    //   address.style.display = "block";
-    // });
+    aAddress.addEventListener("click", (e) => {
+      e.preventDefault();
+      profile.style.display = "none";
+      account.style.display = "none";
+      security.style.display = "none";
+      address.style.display = "block";
+    });
   </script>
   <script src="./js/main.js"></script>
 </html>
