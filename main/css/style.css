@@ -2192,3 +2192,8 @@ input[type="password"] {
 }
 
 /* form login */
+.size {
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
