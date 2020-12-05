@@ -30,6 +30,43 @@
       href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900"
       rel="stylesheet"
     />
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-container {
+        width: 90%;
+        margin: 1rem auto;
+        /* background-color: rgb(44, 44, 44); */
+        padding: 1rem;
+      }
+      .swiper-container img {
+        /* width: 50%; */
+        height: 120px !important;
+        /* height: 100%; */
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <body>
@@ -409,25 +446,23 @@
     </section>
     <!-- //ab -->
 
-    <!-- brands -->
-    <section class="brands py-5" id="brands">
-      <div class="image_logo imageAdidas">
-        <img src="images/logoAdidas.png" class="logo" />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../main/images/logoAdidas.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../main/images/logoConverse.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../main/images/logoVans.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../main/images/logoNewBalance.png" alt="" />
+        </div>
       </div>
-      <div class="image_logo imageConverse">
-        <img src="images/logoConverse.png" class="logo" />
-      </div>
-      <div class="image_logo imageNewBalance">
-        <img src="images/logoNewBalance.png" class="logo" />
-      </div>
-      <div class="image_logo imageNike">
-        <img src="images/logoNike.png" class="logo" />
-      </div>
-      <div class="image_logo imageVans">
-        <img src="images/logoVans.png" class="logo" />
-      </div>
-    </section>
-    <!-- brands -->
+    </div>
+
     <!-- footer -->
     <div class="footer_container">
       <footer>
@@ -619,4 +654,20 @@
     <!-- form login -->
   </body>
   <script src="./script/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 1000,
+      },
+    });
+  </script>
 </html>
